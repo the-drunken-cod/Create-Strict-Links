@@ -1,9 +1,9 @@
 <div align="center" style="text-align: center;">
 
 # Create: Strict Links
-Makes the [Create Mod](https://modrinth.com/mod/create) Redstone Link frequencies take NBT into account, allowing for more frequency diversity and even password protection via written books.
+Makes the [Create Mod](https://modrinth.com/mod/create) Redstone Link frequencies take data components (NBT) into account, allowing for more frequency diversity and even password protection via written books.
 
-![Banner](./.github/assets/banner.png)
+![Banner](./.github/assets/banner.jpg)
 
 </div>
 
@@ -20,13 +20,8 @@ Then simply place the downloaded JAR file into your Minecraft `mods` folder and 
 <br>
 
 ## Attribution:
-- Created from the template [jaredlll08/MultiLoader-Template.](https://github.com/jaredlll08/MultiLoader-Template)  
-  Changes:
-  - Added build and release GitHub Actions workflows.
-  - Added VS Code settings and debug launch configurations.
-  - Added base config services for NeoForge.
-  - Added a base registry helper for NeoForge.
-  - Added base datagen services for NeoForge.
+- Created from the template [jaredlll08/MultiLoader-Template.](https://github.com/jaredlll08/MultiLoader-Template)
+- Banner uses blocks from the [Create Mod.](https://modrinth.com/mod/create)
 
 <br>
 
