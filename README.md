@@ -11,13 +11,10 @@ Makes the [Create Mod](https://modrinth.com/mod/create) Redstone Link frequencie
 
 ## Installation:
 You can visit the [releases page](https://github.com/the-drunken-cod/Create-Strict-Links/releases), the [TODO: Modrinth page](), or the [TODO: CurseForge page]() to download the latest version of the mod.  
-Then simply place the downloaded JAR file into your Minecraft `mods` folder and launch the game with either NeoForge or Fabric.  
-  
-> [!IMPORTANT]  
-> The **Fabric version** requires [Cloth Config API](https://modrinth.com/mod/cloth-config) to be installed as well.
+Then simply place the downloaded JAR file into your Minecraft `mods` folder and launch the game with NeoForge.  
 
 > [!NOTE]  
-> You will need either the [NeoForge](https://neoforge.dev/) or [Fabric](https://fabricmc.net/) mod loader installed to run the mod.  
+> You will need [NeoForge](https://neoforge.dev/) installed to run the mod.  
 > An easy way of doing this is by creating a modded game instance in a launcher like [ATLauncher](https://atlauncher.com/) or [MultiMC.](https://multimc.org/)
 
 <br>
@@ -27,9 +24,9 @@ Then simply place the downloaded JAR file into your Minecraft `mods` folder and 
   Changes:
   - Added build and release GitHub Actions workflows.
   - Added VS Code settings and debug launch configurations.
-  - Added base config services for Neo and Fabric.
-  - Added a base registry helper for Neo and Fabric.
-  - Added base datagen services for Neo and Fabric.
+  - Added base config services for NeoForge.
+  - Added a base registry helper for NeoForge.
+  - Added base datagen services for NeoForge.
 
 <br>
 
