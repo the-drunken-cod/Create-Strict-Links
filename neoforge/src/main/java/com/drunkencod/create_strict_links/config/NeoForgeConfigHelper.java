@@ -56,6 +56,10 @@ public class NeoForgeConfigHelper implements IConfigHelper {
                             "When set to true, Create's Redstone Link frequencies will take all data components (NBT) of the two given items into account.")
                     .comment(
                             "When set to false, they behave as they do in unmodified Create, only checking for item ID and the color component.")
+                    .comment(
+                            "Note: Changing this requires a server restart to take effect.")
+                    .comment(
+                            "Disabling this on a world where NBT-specific links are used will make them interfere with each other until re-enabled!")
                     .define("isModEnabled", true);
         }
     }

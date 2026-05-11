@@ -23,10 +23,13 @@ public abstract class FrequencyMixin {
             return;
         }
 
-        if (!NeoForgeConfigHelper.SERVER.isModEnabled.get() || !(obj instanceof Frequency other)) {
+        if (!(obj instanceof Frequency other)) {
             cir.setReturnValue(false);
             return;
         }
+
+        if (!NeoForgeConfigHelper.SERVER.isModEnabled.get())
+            return;
 
         cir.setReturnValue(ItemStack.isSameItemSameComponents(this.stack, other.getStack()));
     }
