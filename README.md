@@ -3,7 +3,7 @@
 # Create: Strict Links
 Makes the [Create Mod](https://modrinth.com/mod/create) Redstone Link frequencies take data components (NBT) into account, allowing for more frequency diversity and even password protection via written books.
 
-![Banner](./.github/assets/banner.jpg)
+![Banner](./.github/assets/banner.png)
 
 </div>
 
