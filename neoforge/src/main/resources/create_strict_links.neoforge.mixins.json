@@ -3,7 +3,7 @@
   "minVersion": "0.8",
   "package": "com.drunkencod.create_strict_links.mixin",
   "compatibilityLevel": "JAVA_21",
-  "mixins": [],
+  "mixins": ["FrequencyMixin"],
   "client": [],
   "server": [],
   "injectors": {
