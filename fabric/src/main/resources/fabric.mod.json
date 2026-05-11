@@ -8,18 +8,18 @@
         "${mod_author}"
     ],
     "contact": {
-        "homepage": "https://github.com/#REPLACE_REPO",
-        "sources": "https://github.com/#REPLACE_REPO"
+        "homepage": "https://github.com/the-drunken-cod/Create-Strict-Links",
+        "sources": "https://github.com/the-drunken-cod/Create-Strict-Links"
     },
     "license": "${license}",
     "icon": "${mod_id}.png",
     "environment": "*",
     "entrypoints": {
         "main": [
-            "com.drunkencod.multi_loader_template.MultiLoaderTemplateMod"
+            "com.drunkencod.create_strict_links.CreateStrictLinksMod"
         ],
         "fabric-datagen": [
-            "com.drunkencod.multi_loader_template.ModDataGen"
+            "com.drunkencod.create_strict_links.ModDataGen"
         ]
     },
     "mixins": [

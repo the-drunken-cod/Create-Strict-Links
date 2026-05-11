@@ -1,19 +1,16 @@
 <div align="center" style="text-align: center;">
 
-# #REPLACE_NAME
-#REPLACE_DESCRIPTION
+# Create: Strict Links
+Makes the [Create Mod](https://modrinth.com/mod/create) Redstone Link frequencies take NBT into account, allowing for more frequency diversity and even password protection via written books.
 
 ![Banner](./.github/assets/banner.png)
 
 </div>
 
-## Introduction:
-#REPLACE_INTRODUCTION
-
 <br>
 
 ## Installation:
-You can visit the [releases page](https://github.com/#REPLACE_REPO/releases), the [TODO: Modrinth page](), or the [TODO: CurseForge page]() to download the latest version of the mod.  
+You can visit the [releases page](https://github.com/the-drunken-cod/Create-Strict-Links/releases), the [TODO: Modrinth page](), or the [TODO: CurseForge page]() to download the latest version of the mod.  
 Then simply place the downloaded JAR file into your Minecraft `mods` folder and launch the game with either NeoForge or Fabric.  
   
 > [!IMPORTANT]  
@@ -38,7 +35,7 @@ Then simply place the downloaded JAR file into your Minecraft `mods` folder and 
 
 ## License:
 This project is licensed under the AGPL-3.0-or-later License.  
-See the [`LICENSE.txt` file](https://github.com/#REPLACE_REPO/blob/develop/LICENSE.txt) for details.
+See the [`LICENSE.txt` file](https://github.com/the-drunken-cod/Create-Strict-Links/blob/develop/LICENSE.txt) for details.
 
 <br>
 

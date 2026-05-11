@@ -7,7 +7,7 @@ applyTo: "**"
 # Base Instructions
 
 Language: Java 21  
-Application Type: #REPLACE_SUMMARY
+Application Type: Minecraft Mod
 Minecraft Version: 1.21.1  
 Modding Framework: NeoForge v21.1
 
