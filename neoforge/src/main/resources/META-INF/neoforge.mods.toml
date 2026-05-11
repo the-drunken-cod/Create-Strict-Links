@@ -1,7 +1,7 @@
 modLoader = "javafml" #mandatory
 loaderVersion = "${neoforge_loader_version_range}" #mandatory
 license = "${license}" # Review your options at https://choosealicense.com/.
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/" #optional
+issueTrackerURL="https://github.com/the-drunken-cod/Create-Strict-Links/issues"
 
 [[mods]] #mandatory
     modId = "${mod_id}" #mandatory
@@ -13,6 +13,7 @@ license = "${license}" # Review your options at https://choosealicense.com/.
     credits="${credits}" #optional
     authors = "${mod_author}" #optional
     description = '''${description}''' #mandatory (Supports multiline text)
+    displayURL="https://github.com/the-drunken-cod/Create-Strict-Links"
 
 [[mixins]]
     config = "${mod_id}.mixins.json"
