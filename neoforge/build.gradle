@@ -51,3 +51,19 @@ processResources {
 tasks.named('sourcesJar', Jar) {
     duplicatesStrategy = DuplicatesStrategy.EXCLUDE
 }
+
+repositories {
+    // Create
+    maven { url = "https://maven.createmod.net" }
+    // Registrate (Create dependency)
+    maven { url = "https://maven.ithundxr.dev/snapshots" }
+}
+
+dependencies {
+    // Create
+    implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
+    runtimeOnly("com.tterrag.registrate:Registrate:${registrate_version}")
+    compileOnly("dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}")
+    runtimeOnly("dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}")
+    implementation("net.createmod.ponder:ponder-neoforge:${ponder_version}")
+}
