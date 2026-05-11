@@ -14,23 +14,7 @@ package com.drunkencod.create_strict_links.config;
 public interface IConfigHelper {
 
     /**
-     * Example startup (common) config value — read once during mod initialisation.
-     *
-     * @return {@code true} if the example startup option is enabled
+     * Whether the mod should be enabled
      */
-    boolean getExampleStartupBool();
-
-    /**
-     * Example server-side config value.
-     *
-     * @return {@code true} if the example server option is enabled
-     */
-    boolean getExampleServerBool();
-
-    /**
-     * Example client-side config value.
-     *
-     * @return {@code true} if the example client option is enabled
-     */
-    boolean getExampleClientBool();
+    boolean isModEnabled();
 }

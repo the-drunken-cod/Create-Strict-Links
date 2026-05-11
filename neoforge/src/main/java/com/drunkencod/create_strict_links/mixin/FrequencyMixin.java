@@ -1,5 +1,6 @@
 package com.drunkencod.create_strict_links.mixin;
 
+import com.drunkencod.create_strict_links.config.NeoForgeConfigHelper;
 import com.simibubi.create.content.redstone.link.RedstoneLinkNetworkHandler.Frequency;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
@@ -17,14 +18,19 @@ public abstract class FrequencyMixin {
     // #region equals override — additionally verify Data Components (NBT)
     @Inject(method = "equals", at = @At("HEAD"), cancellable = true)
     private void strictEquals(Object obj, CallbackInfoReturnable<Boolean> cir) {
+        if (!NeoForgeConfigHelper.SERVER.isModEnabled.get())
+            return;
+
         if (this == obj) {
             cir.setReturnValue(true);
             return;
         }
+
         if (!(obj instanceof Frequency other)) {
             cir.setReturnValue(false);
             return;
         }
+
         cir.setReturnValue(ItemStack.isSameItemSameComponents(this.stack, other.getStack()));
     }
 }

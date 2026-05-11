@@ -11,9 +11,16 @@ import net.neoforged.fml.common.Mod;
 public class CreateStrictLinksMod {
 
     public CreateStrictLinksMod(IEventBus eventBus, ModContainer modContainer) {
+        Constants.LOG.info("Starting Create Strict Links NeoForge initialization...");
+
         // Register configs
         ((NeoForgeConfigHelper) Services.CONFIG).register(modContainer);
+        Constants.LOG.debug("Mod config initialized.");
 
         CreateStrictLinks.init();
+        Constants.LOG.debug("Common mod initialized.");
+
+        Constants.LOG.info(
+                "Create Strict Links NeoForge initialization complete. Use config/create_strict_links-server.toml to enable or disable the mod.");
     }
 }
