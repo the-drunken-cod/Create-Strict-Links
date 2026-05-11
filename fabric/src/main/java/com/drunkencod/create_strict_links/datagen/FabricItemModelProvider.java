@@ -3,7 +3,6 @@ package com.drunkencod.create_strict_links.datagen;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 
 import com.drunkencod.create_strict_links.Constants;
-import com.drunkencod.create_strict_links.datagen.ItemModelHelper;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.core.registries.BuiltInRegistries;

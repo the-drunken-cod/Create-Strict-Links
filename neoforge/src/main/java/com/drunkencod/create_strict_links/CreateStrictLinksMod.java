@@ -1,7 +1,5 @@
 package com.drunkencod.create_strict_links;
 
-import com.drunkencod.create_strict_links.Constants;
-import com.drunkencod.create_strict_links.MultiLoaderTemplate;
 import com.drunkencod.create_strict_links.config.NeoForgeConfigHelper;
 import com.drunkencod.create_strict_links.datagen.NeoForgeItemModelProvider;
 import com.drunkencod.create_strict_links.platform.Services;
@@ -24,7 +22,7 @@ public class CreateStrictLinksMod {
 
         eventBus.addListener(this::onGatherData);
 
-        MultiLoaderTemplate.init();
+        CreateStrictLinks.init();
     }
 
     private void onGatherData(GatherDataEvent event) {

@@ -5,8 +5,6 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.neoforge.common.ModConfigSpec;
 import org.apache.commons.lang3.tuple.Pair;
 
-import com.drunkencod.create_strict_links.config.IConfigHelper;
-
 public class NeoForgeConfigHelper implements IConfigHelper {
 
     // -------------------------------------------------------------------------
@@ -61,6 +59,8 @@ public class NeoForgeConfigHelper implements IConfigHelper {
      * so that configs are registered before the world loads.
      */
     public void register(ModContainer modContainer) {
+        modContainer.registerConfig(ModConfig.Type.CLIENT, CLIENT_SPEC);
+        modContainer.registerConfig(ModConfig.Type.COMMON, COMMON_SPEC);
         modContainer.registerConfig(ModConfig.Type.SERVER, SERVER_SPEC);
     }
 

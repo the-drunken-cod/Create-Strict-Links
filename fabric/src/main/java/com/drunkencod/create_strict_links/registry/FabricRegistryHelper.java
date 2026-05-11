@@ -9,7 +9,6 @@ import net.minecraft.core.Registry;
 import java.util.function.Supplier;
 
 import com.drunkencod.create_strict_links.Constants;
-import com.drunkencod.create_strict_links.registry.IRegistryHelper;
 
 public class FabricRegistryHelper implements IRegistryHelper {
 

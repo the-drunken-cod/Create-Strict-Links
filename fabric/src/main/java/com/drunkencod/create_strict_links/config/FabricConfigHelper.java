@@ -1,7 +1,6 @@
 package com.drunkencod.create_strict_links.config;
 
 import com.drunkencod.create_strict_links.Constants;
-import com.drunkencod.create_strict_links.config.IConfigHelper;
 
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigData;
