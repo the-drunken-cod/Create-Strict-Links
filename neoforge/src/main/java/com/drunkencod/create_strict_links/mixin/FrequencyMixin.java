@@ -18,15 +18,12 @@ public abstract class FrequencyMixin {
     // #region equals override — additionally verify Data Components (NBT)
     @Inject(method = "equals", at = @At("HEAD"), cancellable = true)
     private void strictEquals(Object obj, CallbackInfoReturnable<Boolean> cir) {
-        if (!NeoForgeConfigHelper.SERVER.isModEnabled.get())
-            return;
-
         if (this == obj) {
             cir.setReturnValue(true);
             return;
         }
 
-        if (!(obj instanceof Frequency other)) {
+        if (!NeoForgeConfigHelper.SERVER.isModEnabled.get() || !(obj instanceof Frequency other)) {
             cir.setReturnValue(false);
             return;
         }
