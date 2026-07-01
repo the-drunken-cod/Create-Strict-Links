@@ -14,7 +14,7 @@ You can visit the [releases page](https://github.com/the-drunken-cod/Create-Stri
 Then simply place the downloaded JAR file into your Minecraft `mods` folder and launch the game with NeoForge.  
 
 > [!NOTE]  
-> You will need [NeoForge](https://neoforge.dev/) installed to run the mod.  
+> You will need [NeoForge](https://neoforged.net/) installed to run the mod.  
 > An easy way of doing this is by creating a modded game instance in a launcher like [ATLauncher](https://atlauncher.com/) or [MultiMC.](https://multimc.org/)
 
 <br>
