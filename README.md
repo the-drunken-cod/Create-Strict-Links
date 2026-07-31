@@ -25,6 +25,14 @@ Then simply place the downloaded JAR file into your Minecraft `mods` folder and 
 
 <br>
 
+## Modpack Policy:
+You are free to use Create: Strict Links in any modpacks; public or private :)  
+Just make sure you abide by [our licenses](#licenses), common sense, and [the Minecraft EULA.](https://minecraft.net/en-us/eula)  
+We would also appreciate a mention in the credits section of your modpack and a quick shout on our [discussion board](https://github.com/the-drunken-cod/Create-Strict-Links/discussions) about your modpack (so we can check it out and play it ourselves!)  
+Please also consider [reporting any issues or suggestions](https://github.com/the-drunken-cod/Create-Strict-Links/issues), so we can improve the mod for you and other players and have better compatibility with other mods.
+
+<br>
+
 ## License:
 This project is licensed under the AGPL-3.0-or-later License.  
 See the [`LICENSE.txt` file](https://github.com/the-drunken-cod/Create-Strict-Links/blob/develop/LICENSE.txt) for details.
