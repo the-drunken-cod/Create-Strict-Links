@@ -1,6 +1,5 @@
 plugins {
     id 'multiloader-common'
-    id 'eclipse'
 }
 
 configurations {
@@ -9,11 +8,6 @@ configurations {
     }
     commonResources{
         canBeResolved = true
-    }
-    // Resolvable variant of compileOnly for IDE tooling (eclipse/VS Code Gradle model)
-    ideCompileOnly {
-        canBeResolved = true
-        extendsFrom configurations.compileOnly
     }
 }
 
@@ -25,14 +19,6 @@ dependencies {
     }
     commonJava project(path: ':common', configuration: 'commonJava')
     commonResources project(path: ':common', configuration: 'commonResources')
-}
-
-// Expose compileOnly (which includes the :common project) to the Eclipse/VS Code
-// classpath model so the Java language server can resolve cross-module imports.
-eclipse {
-    classpath {
-        plusConfigurations += [configurations.ideCompileOnly]
-    }
 }
 
 tasks.named('compileJava', JavaCompile) {

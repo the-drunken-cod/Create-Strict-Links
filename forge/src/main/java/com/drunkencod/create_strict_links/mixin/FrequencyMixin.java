@@ -1,6 +1,5 @@
 package com.drunkencod.create_strict_links.mixin;
 
-import com.drunkencod.create_strict_links.config.NeoForgeConfigHelper;
 import com.simibubi.create.content.redstone.link.RedstoneLinkNetworkHandler.Frequency;
 import net.minecraft.world.item.ItemStack;
 import org.spongepowered.asm.mixin.Mixin;
@@ -27,9 +26,6 @@ public abstract class FrequencyMixin {
             cir.setReturnValue(false);
             return;
         }
-
-        if (!NeoForgeConfigHelper.SERVER.isModEnabled.get())
-            return;
 
         cir.setReturnValue(ItemStack.isSameItemSameComponents(this.stack, other.getStack()));
     }

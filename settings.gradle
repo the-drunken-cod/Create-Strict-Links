@@ -1,18 +1,26 @@
 pluginManagement {
     repositories {
         gradlePluginPortal()
-        mavenCentral()
-        exclusiveContent {
-            forRepository {
-                maven {
-                    name = 'Sponge'
-                    url = uri('https://repo.spongepowered.org/repository/maven-public')
-                }
-            }
-            filter {
-                includeGroupAndSubgroups("org.spongepowered")
-            }
+        // mavenCentral()
+        maven {
+            name = 'Forge'
+            url = 'https://maven.minecraftforge.net/'
         }
+        maven {
+            name = 'Sponge Snapshots'
+            url = 'https://repo.spongepowered.org/repository/maven-public/'
+        }
+        // exclusiveContent {
+        //     forRepository {
+        //         maven {
+        //             name = 'Sponge'
+        //             url = uri('https://repo.spongepowered.org/repository/maven-public')
+        //         }
+        //     }
+        //     filter {
+        //         includeGroupAndSubgroups("org.spongepowered")
+        //     }
+        // }
     }
 }
 
@@ -23,11 +31,12 @@ plugins {
 // This should match the folder name of the project, or else IDEA may complain (see https://youtrack.jetbrains.com/issue/IDEA-317606)
 rootProject.name = 'create_strict_links'
 include('common')
-include('neoforge')
+// include('neoforge')
+include('forge')
 
 // Load version-specific properties from versions/<mc_version>.properties.
 // This allows switching the target Minecraft/loader versions without editing the main gradle.properties.
-def mcVersion = providers.gradleProperty('mc_version').getOrElse('1.21.1')
+def mcVersion = providers.gradleProperty('mc_version').getOrElse('1.20.1')
 def versionPropsFile = rootDir.toPath().resolve("versions/${mcVersion}.properties").toFile()
 if (versionPropsFile.exists()) {
     def versionProps = new Properties()
