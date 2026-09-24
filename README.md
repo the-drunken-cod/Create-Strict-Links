@@ -1,7 +1,8 @@
 <div align="center" style="text-align: center;">
 
 # Create: Strict Links
-Makes the [Create Mod](https://modrinth.com/mod/create) Redstone Link frequencies take data components (NBT) into account, allowing for more frequency diversity and even password protection via written books.
+Makes the [Create Mod](https://modrinth.com/mod/create) Redstone Link frequencies take data components (NBT) into account, allowing for more frequency diversity and even password protection via written books.  
+This also extends to other mods' blocks and items that use Create's frequency system, like the [Aeronautics](https://modrinth.com/mod/create-aeronautics) Typewriter.
 
 ![Banner](./.github/assets/banner.png)
 
